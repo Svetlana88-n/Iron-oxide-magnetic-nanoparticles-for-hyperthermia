@@ -1,170 +1,166 @@
 {
-  "topic": "Aptamer–protein binding measurements",
-  "root_query": "aptamer protein binding Kd SPR SELEX experimental affinity",
+  "topic": "Iron oxide magnetic nanoparticles for hyperthermia",
+  "root_query": "magnetic hyperthermia iron oxide nanoparticles SAR ILP alternating magnetic field",
   "source_map_version": "0.1.0",
   "source_groups": {
     "scientific_papers": [
       {
-        "source_id": "paper_green_2018",
-        "name": "Green et al. 2018 – thrombin-binding DNA aptamer",
+        "source_id": "vilas_boas_2020",
+        "name": "Vilas-Boas et al. 2020 – Magnetic Hyperthermia for Cancer Treatment: Main Parameters Affecting the Outcome of In Vitro and In Vivo Studies",
         "source_type": "journal_article",
-        "url": "https://doi.org/10.1021/example.2018",
-        "doi": "10.1021/example.2018",
+        "url": "https://doi.org/10.3390/molecules25122874",
+        "doi": "10.3390/molecules25122874",
         "access_status": "open_access",
         "access_method": "publisher PDF download",
-        "access_date": "2026-01-15",
+        "access_date": "2026-05-25",
         "license": "CC-BY-4.0",
-        "expected_data_volume": "low",
-        "estimated_records": 8,
-        "available_data_types": ["tables", "text", "figures"],
-        "expected_fields": ["aptamer_sequence", "target_name", "Kd", "assay_method"],
+        "expected_data_volume": "high",
+        "estimated_records": 100,
+        "available_data_types": ["tables", "text"],
+        "expected_fields": ["core_diameter_mean", "coating_material", "frequency", "amplitude", "sar", "concentration"],
         "extraction_strategy": {
-          "recommended_method": "pdf_table_extraction plus manual verification"
+          "recommended_method": "manual extraction from Tables A1-A3"
         },
-        "notes": "Primary paper for thrombin aptamer benchmark measurements."
+        "notes": "Review with compiled experimental data from multiple primary studies."
       },
       {
-        "source_id": "paper_lee_2020",
-        "name": "Lee et al. 2020 – multiplex aptamer panel",
+        "source_id": "ga_materials_2022",
+        "name": "Garcia-Rodriguez et al. 2022 – Gum Arabic-Coated Fe3O4 Nanoparticles for Hyperthermia",
         "source_type": "journal_article",
-        "url": "https://doi.org/10.1038/example.2020",
-        "doi": "10.1038/example.2020",
+        "url": "https://doi.org/10.3390/ma15030788",
+        "doi": "10.3390/ma15030788",
+        "access_status": "open_access",
+        "access_method": "publisher PDF download",
+        "access_date": "2026-05-25",
+        "license": "CC-BY-4.0",
+        "expected_data_volume": "low",
+        "estimated_records": 5,
+        "available_data_types": ["tables", "text", "figures"],
+        "expected_fields": ["core_diameter_mean", "coating_material", "frequency", "amplitude", "sar", "ms", "zeta_potential", "hydrodynamic_diameter"],
+        "extraction_strategy": {
+          "recommended_method": "manual extraction from Table 1 and Figure 7"
+        },
+        "notes": "Primary experimental data with complete characterization."
+      },
+      {
+        "source_id": "thiesen_jordan_2008",
+        "name": "Thiesen & Jordan 2008 – Clinical applications of magnetic nanoparticles for hyperthermia",
+        "source_type": "journal_article",
+        "url": "https://doi.org/10.1080/02656730802104757",
+        "doi": "10.1080/02656730802104757",
         "access_status": "subscription",
         "access_method": "institutional library PDF",
-        "access_date": "2026-01-20",
+        "access_date": "2026-05-25",
         "license": "publisher terms",
-        "expected_data_volume": "medium",
-        "estimated_records": 25,
-        "available_data_types": ["supplementary_tables"],
-        "expected_fields": ["aptamer_sequence", "target_name", "IC50", "buffer"],
-        "extraction_strategy": {
-          "recommended_method": "supplementary PDF table parsing"
-        },
-        "notes": "Use supplementary Table S3 for binding constants."
-      },
-      {
-        "source_id": "paper_kim_2015",
-        "name": "Kim et al. 2015 – lysozyme-binding aptamer",
-        "source_type": "journal_article",
-        "url": "https://doi.org/10.1016/example.2015",
-        "doi": "10.1016/example.2015",
-        "access_status": "open_access",
-        "access_method": "publisher PDF download",
-        "access_date": "2026-01-18",
-        "license": "CC-BY-NC-ND",
         "expected_data_volume": "low",
-        "estimated_records": 6,
-        "available_data_types": ["tables", "text"],
-        "expected_fields": ["aptamer_sequence", "target_name", "Kd", "assay_method"],
+        "estimated_records": 3,
+        "available_data_types": ["text", "figures"],
+        "expected_fields": ["core_diameter_mean", "coating_material", "frequency", "amplitude", "sar", "concentration"],
         "extraction_strategy": {
-          "recommended_method": "pdfplumber table extraction"
+          "recommended_method": "manual extraction from clinical data sections"
         },
-        "notes": "Benchmark lysozyme aptamer measurements."
+        "notes": "Clinical trial data for NanoTherm (aminosilane-coated, 15 nm core)."
       }
     ],
-    "supplementary_materials": [
+    "review_articles": [
       {
-        "source_id": "supp_lee_2020_s3",
-        "name": "Lee 2020 Supplementary Table S3",
-        "source_type": "supplementary_data",
-        "url": "https://doi.org/10.1038/example.2020#supplementary",
-        "doi": "10.1038/example.2020",
+        "source_id": "soetaert_2020",
+        "name": "Soetaert et al. 2020 – Cancer therapy with iron oxide nanoparticles: Agents of thermal and immune therapies",
+        "source_type": "review",
+        "url": "https://doi.org/10.1016/j.addr.2020.06.025",
+        "doi": "10.1016/j.addr.2020.06.025",
         "access_status": "open_access",
-        "access_method": "supplementary PDF",
-        "access_date": "2026-01-21",
-        "license": "CC-BY-4.0",
-        "expected_data_volume": "medium",
-        "estimated_records": 20,
-        "available_data_types": ["tables"],
-        "expected_fields": ["aptamer_sequence", "measurement_value", "measurement_unit"],
+        "access_method": "publisher PDF download",
+        "access_date": "2026-05-25",
+        "license": "CC-BY-NC-ND",
+        "expected_data_volume": "low",
+        "estimated_records": 0,
+        "available_data_types": ["text"],
+        "expected_fields": [],
         "extraction_strategy": {
-          "recommended_method": "Camelot or tabula on supplementary PDF"
+          "recommended_method": "context only, not for data extraction"
         },
-        "notes": "Machine-readable tables; preferred over main-text figure values."
+        "notes": "Provides physics background and safety limit f·H ≤ 5×10⁹ A/(m·s). No extractable records."
+      },
+      {
+        "source_id": "fatima_2021",
+        "name": "Fatima et al. 2021 – Fundamentals to Apply Magnetic Nanoparticles for Hyperthermia Therapy",
+        "source_type": "review",
+        "url": "https://doi.org/10.3390/nano11051203",
+        "doi": "10.3390/nano11051203",
+        "access_status": "open_access",
+        "access_method": "publisher PDF download",
+        "access_date": "2026-05-25",
+        "license": "CC-BY-4.0",
+        "expected_data_volume": "low",
+        "estimated_records": 0,
+        "available_data_types": ["text"],
+        "expected_fields": [],
+        "extraction_strategy": {
+          "recommended_method": "context only, not for data extraction"
+        },
+        "notes": "Provides SAR formula and general parameters. No extractable records."
+      }
+    ],
+    "simulation_studies": [
+      {
+        "source_id": "rytov_usov_2023",
+        "name": "Rytov & Usov 2023 – Effect of static magnetic field on SAR of iron oxide nanoparticles",
+        "source_type": "simulation",
+        "url": "https://doi.org/10.3762/bjnano.14.39",
+        "doi": "10.3762/bjnano.14.39",
+        "access_status": "open_access",
+        "access_method": "publisher PDF download",
+        "access_date": "2026-05-25",
+        "license": "CC-BY-4.0",
+        "expected_data_volume": "none",
+        "estimated_records": 0,
+        "available_data_types": ["text"],
+        "expected_fields": [],
+        "extraction_strategy": {
+          "recommended_method": "excluded from dataset"
+        },
+        "notes": "Numerical simulation, NOT experimental. Excluded from dataset."
       }
     ],
     "databases": [
       {
-        "source_id": "db_aptagen",
-        "name": "AptaIndex / literature-curated aptamer entries",
+        "source_id": "pubchem",
+        "name": "PubChem",
         "source_type": "database",
-        "url": "https://example.org/aptamer-db",
+        "url": "https://pubchem.ncbi.nlm.nih.gov",
         "doi": "",
         "access_status": "open_access",
-        "access_method": "web export and API (if available)",
-        "access_date": "2026-02-01",
-        "license": "CC-BY-4.0",
-        "expected_data_volume": "high",
-        "estimated_records": 200,
-        "available_data_types": ["structured_records", "sequences"],
-        "expected_fields": ["aptamer_sequence", "target_name", "Kd"],
+        "access_method": "PUG-REST API",
+        "access_date": "2026-05-25",
+        "license": "public domain",
+        "expected_data_volume": "metadata_only",
+        "estimated_records": 0,
+        "available_data_types": ["json", "xml"],
+        "expected_fields": ["canonical_smiles", "inchi_key", "molecular_formula"],
         "extraction_strategy": {
-          "recommended_method": "web_scrape or bulk CSV download"
+          "recommended_method": "API lookup by compound name"
         },
-        "notes": "Cross-check sequences against primary papers when possible."
-      }
-    ],
-    "aggregators": [
+        "notes": "Metadata enrichment for coating materials (PEG, dextran, chitosan, etc.)."
+      },
       {
-        "source_id": "agg_uniprot_crossref",
-        "name": "UniProt + Crossref metadata for target proteins",
-        "source_type": "aggregator",
-        "url": "https://www.uniprot.org/",
+        "source_id": "chembl",
+        "name": "ChEMBL",
+        "source_type": "database",
+        "url": "https://www.ebi.ac.uk/chembl",
         "doi": "",
         "access_status": "open_access",
         "access_method": "REST API",
-        "access_date": "2026-02-05",
-        "license": "CC-BY-4.0",
+        "access_date": "2026-05-25",
+        "license": "CC-BY-SA-3.0",
         "expected_data_volume": "metadata_only",
         "estimated_records": 0,
-        "available_data_types": ["protein_names", "identifiers"],
-        "expected_fields": ["target_name", "target_type"],
+        "available_data_types": ["json"],
+        "expected_fields": ["compound_chembl_id", "bioactivity"],
         "extraction_strategy": {
-          "recommended_method": "API lookup to standardize target names"
+          "recommended_method": "API lookup by InChIKey"
         },
-        "notes": "Does not provide binding values; enriches target metadata only."
-      }
-    ],
-    "github_repositories": [
-      {
-        "source_id": "gh_aptamer_benchmark",
-        "name": "community/aptamer-binding-benchmark",
-        "source_type": "github_repository",
-        "url": "https://github.com/example/aptamer-binding-benchmark",
-        "doi": "",
-        "access_status": "open_access",
-        "access_method": "git clone",
-        "access_date": "2026-02-10",
-        "license": "MIT",
-        "expected_data_volume": "medium",
-        "estimated_records": 50,
-        "available_data_types": ["csv", "json"],
-        "expected_fields": ["aptamer_sequence", "target_name", "measurement_value"],
-        "extraction_strategy": {
-          "recommended_method": "import released CSV with license check"
-        },
-        "notes": "Verify commit hash and release tag for reproducibility."
-      }
-    ],
-    "ml_datasets": [
-      {
-        "source_id": "ml_aptamer_kaggle",
-        "name": "Kaggle – Aptamer affinity prediction subset",
-        "source_type": "ml_dataset",
-        "url": "https://www.kaggle.com/datasets/example/aptamer-affinity",
-        "doi": "",
-        "access_status": "registration_required",
-        "access_method": "Kaggle API download",
-        "access_date": "2026-02-12",
-        "license": "unknown",
-        "expected_data_volume": "high",
-        "estimated_records": 500,
-        "available_data_types": ["csv"],
-        "expected_fields": ["aptamer_sequence", "target_name", "label"],
-        "extraction_strategy": {
-          "recommended_method": "document provenance; use only if license permits redistribution"
-        },
-        "notes": "May mix predicted and experimental values—filter by source column."
+        "notes": "Not directly related to hyperthermia; enrichment only."
       }
     ]
   }
