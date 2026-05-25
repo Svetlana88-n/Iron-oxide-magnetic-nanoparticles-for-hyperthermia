@@ -1,135 +1,154 @@
 {
   "schema_version": "0.1.0",
-  "dataset_title": "Aptamer–protein binding dataset",
+  "dataset_title": "Iron oxide magnetic nanoparticles for hyperthermia",
   "fields": [
     {
       "name": "record_id",
       "type": "string",
       "required": true,
-      "description": "Stable unique identifier for one binding measurement record.",
-      "example": "rec_apt_thrombin_2018_pdf_001"
-    },
-    {
-      "name": "aptamer_sequence",
-      "type": "string",
-      "required": true,
-      "description": "Nucleotide sequence of the aptamer (DNA or RNA), 5' to 3'.",
-      "example": "GGTTGGTGTGGTTGG",
-      "normalization_rule": "Uppercase; remove spaces and hyphens; keep only A,C,G,T,U."
-    },
-    {
-      "name": "target_name",
-      "type": "string",
-      "required": true,
-      "description": "Name of the protein or biomolecular target.",
-      "example": "Thrombin"
-    },
-    {
-      "name": "target_type",
-      "type": "string",
-      "required": false,
-      "description": "Broad classification of the target (e.g. enzyme, receptor, toxin).",
-      "example": "serine protease"
-    },
-    {
-      "name": "measurement_type",
-      "type": "string",
-      "required": true,
-      "description": "Reported affinity or binding metric (Kd, Ki, IC50, etc.).",
-      "example": "Kd"
-    },
-    {
-      "name": "measurement_value",
-      "type": "number",
-      "required": false,
-      "description": "Numeric value as reported in the source.",
-      "example": 0.5
-    },
-    {
-      "name": "measurement_unit",
-      "type": "string",
-      "required": false,
-      "description": "Unit of measurement_value (nM, μM, pM, etc.).",
-      "example": "nM",
-      "normalization_rule": "Map synonyms to nM, μM, pM, M; store original in notes if converted."
-    },
-    {
-      "name": "normalized_value_nm",
-      "type": "number",
-      "required": false,
-      "description": "Binding affinity converted to nanomolar (nM) for comparison.",
-      "example": 0.5,
-      "normalization_rule": "Convert measurement_value using measurement_unit to nM."
-    },
-    {
-      "name": "assay_method",
-      "type": "string",
-      "required": false,
-      "description": "Experimental method used to obtain the measurement.",
-      "example": "surface plasmon resonance"
-    },
-    {
-      "name": "buffer",
-      "type": "string",
-      "required": false,
-      "description": "Buffer composition during the binding assay.",
-      "example": "PBS with 5 mM MgCl2"
-    },
-    {
-      "name": "temperature_c",
-      "type": "number",
-      "required": false,
-      "description": "Assay temperature in degrees Celsius.",
-      "example": 25
-    },
-    {
-      "name": "source_id",
-      "type": "string",
-      "required": true,
-      "description": "Identifier linking to an entry in specs/source_map.json.",
-      "example": "paper_green_2018"
-    },
-    {
-      "name": "source_type",
-      "type": "string",
-      "required": false,
-      "description": "Category of source (paper, database, web page, etc.).",
-      "example": "scientific_paper"
-    },
-    {
-      "name": "source_url",
-      "type": "string",
-      "required": false,
-      "description": "URL or landing page for the source.",
-      "example": "https://doi.org/10.1021/example"
+      "description": "Unique identifier per record",
+      "example": "IONP_HT_001"
     },
     {
       "name": "doi",
       "type": "string",
-      "required": false,
-      "description": "Digital Object Identifier when available.",
-      "example": "10.1021/example"
+      "required": true,
+      "description": "DOI of source publication",
+      "example": "10.1039/D5RA00728C"
     },
     {
-      "name": "extraction_method",
+      "name": "core_material",
       "type": "string",
-      "required": false,
-      "description": "How the record was obtained (pdf_manual, pdf_table, web_scrape, etc.).",
-      "example": "pdf_table"
+      "required": true,
+      "description": "Chemical composition of magnetic core",
+      "example": "Fe₃O₄"
     },
     {
-      "name": "extraction_confidence",
-      "type": "string",
-      "required": false,
-      "description": "Confidence in extracted values: high, medium, low, or unknown.",
-      "example": "high"
+      "name": "core_diameter_mean",
+      "type": "number",
+      "required": true,
+      "description": "Mean core diameter",
+      "unit": "nm",
+      "example": 13.5
     },
     {
-      "name": "notes",
+      "name": "core_diameter_std",
+      "type": "number",
+      "required": false,
+      "description": "Standard deviation of core diameter",
+      "unit": "nm",
+      "example": 1.2
+    },
+    {
+      "name": "core_shape",
       "type": "string",
       "required": false,
-      "description": "Free-text notes, caveats, or provenance details.",
-      "example": "Value taken from Table 2; unit inferred from caption."
+      "description": "Morphology",
+      "example": "spherical"
+    },
+    {
+      "name": "ms",
+      "type": "number",
+      "required": false,
+      "description": "Saturation magnetization",
+      "unit": "emu/g",
+      "example": 80
+    },
+    {
+      "name": "coating_material",
+      "type": "string",
+      "required": false,
+      "description": "Surface coating composition",
+      "example": "PEG2000"
+    },
+    {
+      "name": "coating_thickness",
+      "type": "number",
+      "required": false,
+      "description": "Coating layer thickness",
+      "unit": "nm",
+      "example": 3.5
+    },
+    {
+      "name": "zeta_potential",
+      "type": "number",
+      "required": false,
+      "description": "Surface charge",
+      "unit": "mV",
+      "example": -25
+    },
+    {
+      "name": "hydrodynamic_diameter",
+      "type": "number",
+      "required": false,
+      "description": "Hydrodynamic diameter",
+      "unit": "nm",
+      "example": 45
+    },
+    {
+      "name": "synthesis_method",
+      "type": "string",
+      "required": false,
+      "description": "Preparation route",
+      "example": "thermal decomposition"
+    },
+    {
+      "name": "frequency",
+      "type": "number",
+      "required": true,
+      "description": "AMF frequency",
+      "unit": "kHz",
+      "example": 267
+    },
+    {
+      "name": "amplitude",
+      "type": "number",
+      "required": true,
+      "description": "AMF amplitude",
+      "unit": "kA/m",
+      "example": 27
+    },
+    {
+      "name": "solvent_medium",
+      "type": "string",
+      "required": true,
+      "description": "Dispersion medium",
+      "example": "water"
+    },
+    {
+      "name": "concentration",
+      "type": "number",
+      "required": true,
+      "description": "Iron concentration",
+      "unit": "mg/mL",
+      "example": 10
+    },
+    {
+      "name": "sar",
+      "type": "number",
+      "required": false,
+      "description": "Specific Absorption Rate",
+      "unit": "W/g",
+      "example": 705.86
+    },
+    {
+      "name": "ilp",
+      "type": "number",
+      "required": false,
+      "description": "Intrinsic Loss Power = SAR/(f·H²)",
+      "unit": "nHm²/kg",
+      "example": 1.49
+    },
+    {
+      "name": "extraction_notes",
+      "type": "string",
+      "required": false,
+      "description": "Notes on ambiguity",
+      "example": "SAR calculated from heating curve"
     }
+  ],
+  "anyOf": [
+    { "required": ["sar"] },
+    { "required": ["ilp"] }
   ]
 }
