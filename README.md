@@ -1,16 +1,12 @@
-# Aptamer–protein binding dataset (project template)
-
-Publication-ready **dataset project template** for the course *Extraction and preparation of chemical information*. Students move from a research topic to a structured, validated dataset with documented sources, extraction steps, cleaning pipeline, reports, and citation metadata.
-
-**Example topic:** Aptamer–protein binding dataset (replace with your own project in `project.json`).
+# Iron oxide magnetic nanoparticles for hyperthermia
 
 ## Scientific task
 
-Collect experimentally reported aptamer–protein binding measurements (sequences, targets, affinity values, assay context) so they can be compared across literature and database sources.
+Magnetic iron oxide nanoparticles used for heat generation under an alternating magnetic field. The system includes nanoparticle composition, size, coating, synthesis route, measurement conditions, and heating performance.
 
 ## What is one record?
 
-One **record** = one experimentally reported aptamer–protein binding measurement from a specific source (one row in `data/processed/dataset.csv`). See `project.json` and `reports/practice_01_record_and_schema.md`.
+One **record** = one experimentally reported heating measurement (SAR or SLP value) for one specific iron oxide nanoparticle sample under one defined set of AMF conditions (one row in `data/processed/dataset.csv`).
 
 ## Repository structure
 
@@ -31,15 +27,11 @@ One **record** = one experimentally reported aptamer–protein binding measureme
 
 ## Five course practices
 
-Develop the repository in five steps (see `reports/`):
-
 1. **Record definition and dataset schema** — `specs/dataset_schema.json`, Practice 1 report  
 2. **Source map** — `specs/source_map.json`, Practice 2 report  
 3. **PDF extraction** — `specs/pdf_extraction_manifest.json`, `scripts/extract_pdf.py`, Practice 3 report  
 4. **Web extraction** — `specs/web_extraction_manifest.json`, `scripts/extract_web.py`, Practice 4 report  
-5. **Cleaning, normalization and publication** — `specs/cleaning_pipeline.json`, cleaning scripts, Practice 5 report  
-
-Complete **`reports/final_report.md`** and **`dataset_card.md`** before submission.
+5. **Cleaning, normalization and publication** — `specs/cleaning_pipeline.json`, cleaning scripts, Practice 5 report 
 
 ## Data pipeline
 
