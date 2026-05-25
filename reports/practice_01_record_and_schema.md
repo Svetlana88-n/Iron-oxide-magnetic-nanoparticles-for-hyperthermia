@@ -34,7 +34,7 @@ Collect experimentally reported aptamer–protein binding measurements for compa
 | Core diameter > 30 nm or < 2 nm | Outside superparamagnetic/stable single-domain range |
 
 ## Dataset fields
-
+|---------|-------------------------|
 | `record_id` | string | yes | Unique identifier per record | — | IONP_HT_001 |
 | `doi` | string | yes | DOI of source publication | — | 10.1039/D5RA00728C |
 | `core_material` | string | yes | Chemical composition of magnetic core | — | Fe₃O₄ |
