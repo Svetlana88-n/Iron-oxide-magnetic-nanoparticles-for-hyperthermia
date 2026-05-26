@@ -1,15 +1,15 @@
 {
-  "project_id": "aptamer_protein_binding",
-  "project_title": "Aptamer–protein binding dataset",
+  "project_id": "iron_oxide_nanoparticles_hyperthermia",
+  "project_title": "Iron oxide magnetic nanoparticles for hyperthermia",
   "project_status": "template",
-  "scientific_task": "Collect experimentally reported aptamer–protein binding measurements for downstream comparison of binding affinity values and assay conditions.",
+  "scientific_task": "Collect experimentally reported heating performance measurements (SAR or SLP) of iron oxide magnetic nanoparticles under alternating magnetic fields to enable cross-study comparison and identification of key predictors of hyperthermia efficiency.",
   "record_definition": {
-    "one_record": "One experimentally reported aptamer–protein binding measurement from a specific source."
+    "one_record": "One experimentally reported heating measurement (SAR or SLP value) for one specific iron oxide nanoparticle sample under one defined set of AMF conditions."
   },
   "main_entities": [
-    "aptamer",
-    "protein_target",
-    "binding_measurement",
+    "iron_oxide_nanoparticle",
+    "heating_measurement",
+    "alternating_magnetic_field",
     "source"
   ],
   "final_dataset_path": "data/processed/dataset.csv",
