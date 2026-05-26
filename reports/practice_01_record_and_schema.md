@@ -12,7 +12,7 @@ Collect experimentally reported aptamer–protein binding measurements for compa
 
 ## One-record definition
 
-**One record** = one experimentally reported aptamer–protein binding measurement from a specific source (one row in `data/processed/dataset.csv`).
+**One record** = one experimentally reported heating measurement (SAR or SLP value) for one specific iron oxide nanoparticle sample under one defined set of AMF conditions 
 
 ## Examples of records
 
